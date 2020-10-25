@@ -5,6 +5,7 @@ public class Tester{
 	int[] empty = new int[]{};
 	int[][] b = new int[][]{{9,-5,7},{3,8,4}};
 	int[][] empty2 = new int[][]{{},{}};
+	int[][] empty3 = new int[][]{};
         System.out.println(ArrayOps.sum(a));
 	System.out.println(ArrayOps.sum(empty));
 	System.out.println(ArrayOps.largest(a));
@@ -16,5 +17,9 @@ public class Tester{
 	System.out.println(Arrays.toString(ArrayOps.sumCols(empty2)));
 	System.out.println(ArrayOps.isRowMagic(b));
 	System.out.println(ArrayOps.isRowMagic(empty2));
+	System.out.println(ArrayOps.isRowMagic(empty3));
+	System.out.println(ArrayOps.isColMagic(b));
+	System.out.println(ArrayOps.isColMagic(empty2));
+	System.out.println(ArrayOps.isColMagic(empty3));
     }
 }
