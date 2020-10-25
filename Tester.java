@@ -21,5 +21,7 @@ public class Tester{
 	System.out.println(ArrayOps.isColMagic(b));
 	System.out.println(ArrayOps.isColMagic(empty2));
 	System.out.println(ArrayOps.isColMagic(empty3));
-    }
+        System.out.println(ArrayOps.isLocationMagic(b,0,2));
+	System.out.println(ArrayOps.isLocationMagic(b,1,2));
+        }
 }
