@@ -18,7 +18,6 @@ public class ArrayOps{
     }
 
     public static int[] sumRows(int[][] matrix){
-	//maybe account for empty?
 	int[] sumrows = new int[matrix.length];
 	for (int i=0; i<matrix.length; i++){
 	    sumrows[i]=sum(matrix[i]);
@@ -40,6 +39,17 @@ public class ArrayOps{
 	    s+=sum(arr[i]);
 	}
 	return s;
+    }
+
+    public static int[] sumCols(int[][] matrix){
+	int[] sumcols = new int[matrix[1].length];
+	if (matrix.length==0) return sumcols;
+	for (int i=0; i<matrix.length; i++){
+	    for (int j=0; j<matrix[i].length; j++){
+		sumcols[j]+=matrix[i][j];
+	    }
+	}
+	return sumcols;
     }
 
 }
