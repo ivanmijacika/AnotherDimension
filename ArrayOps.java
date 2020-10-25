@@ -18,12 +18,22 @@ public class ArrayOps{
     }
 
     public static int[] sumRows(int[][] matrix){
+	//maybe account for empty?
 	int[] sumrows = new int[matrix.length];
 	for (int i=0; i<matrix.length; i++){
 	    sumrows[i]=sum(matrix[i]);
 	}
 	return sumrows;
     }
+
+    public static int[] largestInRows(int[][] matrix){
+	int[] largestinrows = new int[matrix.length];
+	for (int i=0; i<matrix.length; i++){
+	    largestinrows[i]=largest(matrix[i]);
+	}
+	return largestinrows;
+    }
+
 
 }
 
