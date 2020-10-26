@@ -6,6 +6,7 @@ public class Tester{
 	int[][] b = new int[][]{{9,-5,7},{3,8,4}};
 	int[][] empty2 = new int[][]{{},{}};
 	int[][] empty3 = new int[][]{};
+	int[][] b2 = new int[][]{{1},{0},{-1},{2}};
         System.out.println(ArrayOps.sum(a));
 	System.out.println(ArrayOps.sum(empty));
 	System.out.println(ArrayOps.largest(a));
@@ -23,5 +24,6 @@ public class Tester{
 	System.out.println(ArrayOps.isColMagic(empty3));
         System.out.println(ArrayOps.isLocationMagic(b,0,2));
 	System.out.println(ArrayOps.isLocationMagic(b,1,2));
+	System.out.println(ArrayOps.isColMagic(b2));
         }
 }
